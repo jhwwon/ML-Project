@@ -16,7 +16,7 @@
 ## 주요 기능
 
 - **실시간 이탈 예측**: 15개 핵심 특성 기반 4단계 위험도 분류
-- **모델 성능 비교**: 5개 ML 모델 평가 (XGBoost, Random Forest, Logistic Regression, SVM, KNN)
+- **모델 성능 비교**: ４개 ML 모델 평가(Logistic Regression, Decision Tree, Random Forest,XGBoost)
 - **맞춤형 전략 추천**: 위험도별 차별화된 마케팅 전략 자동 생성
 - **인터랙티브 대시보드**: Streamlit 기반 웹 UI
 
