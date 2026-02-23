@@ -28,7 +28,10 @@ Python 3.x
 ├── xgboost 3.1.2
 ├── streamlit 1.52.2
 ├── pandas 2.3.3
+├── numpy 2.2.6
 ├── plotly 6.5.0
+├── matplotlib 3.10.0
+├── seaborn 0.13.2
 └── imbalanced-learn 0.14.1
 ```
 
@@ -57,13 +60,13 @@ streamlit run app_streamlit_COMPLETE.py
 ## 데이터셋
 
 - **출처**: [Kaggle E-Commerce Customer Behavior Dataset](https://www.kaggle.com/datasets/dhairyajeetsingh/ecommerce-customer-behavior-dataset)
-- **규모**: 52,000개 샘플, 25개 특성
+- **규모**: 10,000개 샘플, 24개 특성
 - **타겟**: Churned (이탈 여부)
 
 ## 프로젝트 구조
 
 ```
-ML-Project/
+Ecommerce_churn_MLProject/
 ├── dataset/
 │   ├── ecommerce_customer_churn_dataset.csv
 │   └── ecommerce_customer_churn_dataset_10k.csv
@@ -88,7 +91,7 @@ ML-Project/
 | Logistic Regression | 78.47% | 71.05% | 49.94% | 73.53% | 59.48% |
 
 ### Feature Selection
-Random Forest 기반 특성 중요도 분석으로 24개 → 15개 특성 선택 (누적 중요도 86%)
+Random Forest 기반 특성 중요도 분석으로 24개 → 15개 특성 선택 (누적 중요도 87.53%)
 
 ### 클래스 불균형 해결
 SMOTE 적용으로 Recall 32.7%p 향상 (클래스 비율 29:71 → 50:50)
@@ -104,11 +107,11 @@ GridSearchCV + 5-Fold CV로 XGBoost 최적화
 
 ## 주요 특성 (Top 5)
 
-1. **Customer_Service_Calls** (12.60%) - 고객 서비스 통화 수
-2. **Lifetime_Value** (12.24%) - 고객 평생 가치
-3. **Cart_Abandonment_Rate** (9.40%) - 장바구니 이탈률
-4. **Age** (6.17%) - 연령
-5. **Total_Purchases** (5.64%) - 총 구매 횟수
+1. **Lifetime_Value** (12.71%) - 고객 평생 가치
+2. **Customer_Service_Calls** (10.74%) - 고객 서비스 통화 수
+3. **Cart_Abandonment_Rate** (9.34%) - 장바구니 이탈률
+4. **Age** (6.13%) - 연령
+5. **Total_Purchases** (5.89%) - 총 구매 횟수
 
 ## 라이선스
 
