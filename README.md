@@ -107,11 +107,11 @@ GridSearchCV + 5-Fold CV로 XGBoost 최적화
 
 ## 주요 특성 (Top 5)
 
-1. **Lifetime_Value** (12.71%) - 고객 평생 가치
-2. **Customer_Service_Calls** (10.74%) - 고객 서비스 통화 수
-3. **Cart_Abandonment_Rate** (9.34%) - 장바구니 이탈률
-4. **Age** (6.13%) - 연령
-5. **Total_Purchases** (5.89%) - 총 구매 횟수
+1. **Customer_Service_Calls** (19.53%) - 고객 서비스 통화 수
+2. **Cart_Abandonment_Rate** (12.16%) - 장바구니 이탈률
+3. **Lifetime_Value** (11.68%) - 고객 평생 가치
+4. **Total_Purchases** (8.22%) - 총 구매 횟수
+5. **Discount_Usage_Rate** (7.82%) - 할인 사용률
 
 ## 라이선스
 
